@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main(){
+	int a[50],i,j,n,m,sum;
+	scanf("%d",&n);
+	while(n--){
+		scanf("%d",&m);
+		for(i=0;i<m;i++){
+			scanf("%d",&a[i]);
+		}
+	
+	for(i=0;i<m;i++){
+		 sum=0;
+			for(j=0;j<m;j++){
+				if(i==j)
+					continue;
+		else
+		sum+=a[j];
+			}
+			printf("%d ",sum);
+	}
+	printf("\n");
+	}
+}
